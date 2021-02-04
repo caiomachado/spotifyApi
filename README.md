@@ -9,9 +9,12 @@ I used a library for the spotify's api called spotify-web-api-js which already h
 
 For styling I used Styled Components.
 
+First, run 'npm install' to get all the dependencies installed properly.
+
 Before starting the project, make sure you go to the services/spotify.js and assign your client id
 in the client_id variable line 5 for authorization purposes.
 Then, in order to add a playlist to your spotify account, you must change the first argument of the function 'addPlayList' in components/Dashboard/index.js line 145, it must be your account's user_id.
+Also, you need to enter your API_KEY in the weather api file, go to services/weather.js, on line 4 you will find the variable to assign your own api key value.
 Once you do that, you can type 'yarn start' in the console to start the project.
 You will click on the login button to log in your account in the spotify's api.
 Then you will have to type the city you are currently in to get the forecast in celsius.
