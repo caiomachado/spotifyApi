@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Project Explanation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+So, for this project I used two API's (spotify and weather api).
 
-## Available Scripts
+Although it's not finished and there's a lot to work on, the goal is to suggest playlists in spotify
+according to the city's forecast.
 
-In the project directory, you can run:
+I used a library for the spotify's api called spotify-web-api-js which already has a lot of built-in functions to get the necessary values from the spotify api.
 
-### `yarn start`
+For styling I used Styled Components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before starting the project, make sure you go to the services/spotify.js and assign your client id
+in the client_id variable line 5 for authorization purposes.
+Then, in order to add a playlist to your spotify account, you must change the first argument of the function 'addPlayList' in components/Dashboard/index.js line 145, it must be your account's user_id.
+Once you do that, you can type 'yarn start' in the console to start the project.
+You will click on the login button to log in your account in the spotify's api.
+Then you will have to type the city you are currently in to get the forecast in celsius.
+With the result you will receive a suggestion on the bottom left.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+With your spotify information once logged in, you will be able to see your playlists, create new ones, see the songs in the selected playlists, add and remove songs within the playlist and play the songs (although it didn't work in my computer because I wasn't in a proper device)
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+P.S: This project has no responsive styling yet. So if you decrease the screen size you are most likely to encounter some layout bugs.
